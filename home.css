@@ -266,3 +266,9 @@ footer > *{
     display:flex;
     justify-content: space-evenly;
 }
+
+.tmbd-icon img:hover,.git_and_linkedin svg:hover,.git-repo svg:hover{
+    transform:scale(1.2);
+    fill:#2a94b8;
+    opacity: .7;
+}
