@@ -272,3 +272,14 @@ footer > *{
     fill:#2a94b8;
     opacity: .7;
 }
+
+.git-repo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.git-repo label{
+    margin-bottom: 1rem;
+}
