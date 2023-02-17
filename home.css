@@ -107,3 +107,15 @@ h1{
     margin:1rem;
     cursor: pointer;
 }
+
+h2{
+    margin:2rem auto;
+    font-size: 3rem;
+    /* color:#19818f; */
+    color:#2a94b8;
+    text-align: center;
+    border: 4px dotted #285A6B;
+    width:30vw;
+    padding: .5rem;
+    border-radius: 25px;
+}
