@@ -155,3 +155,38 @@ h2{
     margin:1rem;
     /* color:#2a94b8; */
 }
+
+.movies-card .hidden-movie-det{
+    position: absolute; 
+    background-color: #285A6B;
+    /* background-color: #2F455C; */
+    border-radius:25px;
+    /* margin: rem; */
+    display: flex;
+    width:100%;
+    min-height: 30%;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center ; */
+    font-size: 1.1rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: .5rem;
+    top: -1000%;
+    cursor: pointer;
+    transition: top .3s ease-out;
+}
+
+.movies-card:hover .hidden-movie-det{
+    width:100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.9;
+}
+
+.hidden-movie-det > *{
+    padding:1rem;
+    margin: 0.5rem auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
