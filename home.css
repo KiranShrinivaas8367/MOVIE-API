@@ -119,3 +119,32 @@ h2{
     padding: .5rem;
     border-radius: 25px;
 }
+
+.movies-cont-wrap{
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding:.5rem;
+}
+
+.movies-card{
+    display: flex;
+    flex-direction: column;
+    margin:1rem;
+    width:400px;
+    min-width: 350px;
+    height:50%;
+    border-radius: 25px;
+    background-color: #2F455C;
+    border-radius: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.movies-card img{
+    width: 350px;
+    height: auto;
+    border-radius: 25px 25px 12.5px 12.5px;
+}
