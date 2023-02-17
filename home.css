@@ -67,3 +67,18 @@ nav p{
     padding:1rem;
     /* text-align: center; */ 
 }
+
+.search-input a{
+    width: 50px;
+    height:50px;
+    padding:.5rem;
+    top:50%;
+    left:59%;
+    position: absolute;
+    transform: translateY(-50%);
+    /* background-color: #285A6B; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
