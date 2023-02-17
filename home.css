@@ -283,3 +283,27 @@ footer > *{
 .git-repo label{
     margin-bottom: 1rem;
 }
+
+/*-------scrollbar-------*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2F455C;
+    border-radius: 25px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:  #285A6B;
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #19818f;
+  }
