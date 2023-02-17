@@ -42,3 +42,15 @@ nav p{
     display: flex;
     justify-content: center;
 }
+
+.search-input input{
+    width: clamp(18vw,25vw,30vw);
+    height: auto;
+    margin:2rem;
+    padding: 1rem 2rem 1rem 1rem;
+    border:1px solid transparent;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    background:#2F455C;
+    
+}
