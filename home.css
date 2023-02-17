@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-family: 'Tajawal', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background: #04293A;
+    color:white;
+}
+
