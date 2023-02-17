@@ -252,3 +252,17 @@ footer > *{
     height:100px;
     width:150px;
 }
+
+.git_and_linkedin{
+    display: flex;
+    flex-direction: column;
+}
+
+.git_and_linkedin label{
+    margin-bottom:1rem;
+}
+
+.logo-wrap{
+    display:flex;
+    justify-content: space-evenly;
+}
