@@ -203,3 +203,12 @@ h2{
     cursor:pointer;
     border:none;
 }
+
+svg{
+    width: 60px;
+    height: 60px;
+    fill:#2a94b8;
+    /* fill:#285A6B; */
+    /* background: white; */
+    /* border-radius: 50%; */
+}
