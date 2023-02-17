@@ -148,3 +148,10 @@ h2{
     height: auto;
     border-radius: 25px 25px 12.5px 12.5px;
 }
+
+.movies-card h3{
+    font-size:2rem;
+    text-align: center;
+    margin:1rem;
+    /* color:#2a94b8; */
+}
