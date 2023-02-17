@@ -31,3 +31,14 @@ nav{
 nav p{
     width:15vw;
 }
+
+.search-wrap{
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.search-main{
+    display: flex;
+    justify-content: center;
+}
