@@ -212,3 +212,15 @@ svg{
     /* background: white; */
     /* border-radius: 50%; */
 }
+
+.arrow-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    margin: 2rem auto;
+}
+
+.arrow-btn:hover{
+    cursor:pointer;
+    opacity: .9;
+}
