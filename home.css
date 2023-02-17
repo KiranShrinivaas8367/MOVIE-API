@@ -190,3 +190,16 @@ h2{
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.hidden-movie-det button{
+    background-color: #2F455C;
+    /* background-color: transparent; */
+    font-size: 1rem;
+    border:2px solid black;
+    border-radius: 25px;
+    padding:1.1rem;
+    width:7vw;
+    color:white;
+    cursor:pointer;
+    border:none;
+}
