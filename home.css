@@ -82,3 +82,12 @@ nav p{
     justify-content: center;
     align-items: center;
 }
+
+h1{
+    font-size:3.5rem;
+    text-align: center;
+    margin: 2rem auto;
+    color:#19818f;
+    font-weight: bolder;
+    letter-spacing: .3rem;
+}
