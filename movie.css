@@ -220,3 +220,25 @@ nav{
     z-index: -1;
 }
 
+/*----recommendations---*/
+
+.rec-mov{
+    color:white;
+    margin: 3rem 2rem 1rem;
+}
+
+.rec-slide h1{
+    text-align: center;
+    /* background-color: #2a94b8; */
+    border: 2px dashed #2a94b8;
+    width:30vw;
+    margin:auto;
+    padding:1rem;
+    border-radius: 25px;
+}
+
+.rec__cnt{
+    display: flex;
+    justify-content: space-between;
+}
+
