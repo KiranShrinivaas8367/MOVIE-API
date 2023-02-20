@@ -183,15 +183,17 @@ h2{
     font-weight: bolder;
     text-align: center;
     padding: .5rem;
-    top: -1000%;
+    /* top: 100; */
     cursor: pointer;
-    transition: top .3s ease-out;
+    transform: translateY(-100%);
+    transition: transform .4s ease-out;
 }
 
 .movies-card:hover .hidden-movie-det{
     width:100%;
     height: 100%;
-    top: 0;
+    /* top: 100; */
+    transform:translateY(0%);
     opacity: 0.9;
 }
 
@@ -324,3 +326,5 @@ footer > *{
   ::-webkit-scrollbar-thumb:hover {
     background: #19818f;
   }
+
+  
