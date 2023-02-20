@@ -9,3 +9,24 @@
     font-family: 'Quicksand';
 }
 
+/*----img and svg----*/
+
+img{
+    width:400px;
+    height: 500px;
+}
+
+svg{
+    width: 60px;
+    height: 60px;
+    fill:#2a94b8;
+    /* fill:#285A6B; */
+    /* background: white; */
+    /* border-radius: 50%; */
+}
+
+/*------body------*/
+
+body{
+    background-color:#04293A;
+}
