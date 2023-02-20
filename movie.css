@@ -173,3 +173,50 @@ nav{
     margin: 2rem auto;
 }
 
+/*-----media------*/
+
+.media{
+    width: 100%;
+    display: flex;
+}
+
+.media_display{
+    width:80vw;
+    position: relative;
+}
+
+.med_cont{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+
+.med_cont > *{
+    padding:1rem;
+    margin:1rem;
+}
+
+.med_cont h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    width: 13rem;
+    height: 7rem;
+    border-radius: 10px;
+    color:white;
+    font-size: 1.5rem;
+    background: rgba(139, 155, 165, 0.7);
+}
+
+.med_cont h3::before{
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+}
+
