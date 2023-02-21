@@ -9,6 +9,10 @@
     font-family: 'Quicksand';
 }
 
+h1{
+    color:#658b99;
+}
+
 /*----img and svg----*/
 
 img{
@@ -166,11 +170,17 @@ nav{
     justify-content: space-between;
 }
 
+/*----arrow-btn-----*/
+
 .arrow-btn{
     display: flex;
     justify-content: space-between;
     width: 20vw;
     margin: 2rem auto;
+}
+
+.arrow-btn:hover{
+    cursor: pointer;
 }
 
 /*-----media------*/
