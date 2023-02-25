@@ -15,7 +15,7 @@ body{
     color:white;
 }
 
-#trending,#running,#searching{
+#trending,#running,#searching,#tamil,#english{
     display: flex;
 }
 
@@ -76,19 +76,35 @@ nav p{
     /* text-align: center; */ 
 }
 
-.search-input a{
+.search-input button{
     width: 50px;
     height:50px;
     padding:.5rem;
     top:50%;
     left:59%;
+    border:none;
     position: absolute;
     transform: translateY(-50%);
     /* background-color: #285A6B; */
+    background-color: transparent;
+    cursor:pointer;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*----fav---*/
+
+.movies-cont h3{
+    text-align: center;
+}
+
+.movies-cont{
+    display: flex;
+    flex-direction: column;
+    margin:1rem;
+    padding:2rem;
 }
 
 /*-----Title----*/
@@ -96,7 +112,7 @@ nav p{
 h1{
     font-size:3.5rem;
     text-align: center;
-    margin: 2rem auto;
+    margin: 1rem auto;
     color:#19818f;
     font-weight: bolder;
     letter-spacing: .3rem;
@@ -241,6 +257,12 @@ h2{
     cursor:pointer;
     border:none;
 }
+
+.hidden-movie-det button a{
+    color:white;
+    text-decoration: none;
+}
+
 
 /*-------svg-----*/
 
