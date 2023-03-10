@@ -74,18 +74,6 @@ function getcolor(rate){
 
 // }
 
-// const arrows = document.querySelectorAll('.first')
-// const movie_wrap = document.querySelectorAll('.mov-wrap .first')
-// // console.log(arrows)
-// // console.log(movie_wrap)
-
-// arrows.forEach((arrow,i)=>{
-//     // console.log(i)
-//     arrow.addEventListener('click',()=>{
-//         console.log('clicked: '+i)
-//         movie_wrap[i].style.transform = "translateX(-100px)"
-//     })
-// })
 
 const card_det = Array.from(document.querySelectorAll('.mov-wrap'))
 const mov_title = document.querySelector('.container-heading')
@@ -139,64 +127,64 @@ movie_card_fetch(10752,3,'genres')
 movie_card_fetch(14,4,'genres')
 movie_card_fetch(420,5,'companies')
 
-let isDown=false;
-let slider_cont=Array.from(document.querySelectorAll('.mov-wrap'));
-let startX;
-let scrollLeft;
-slider_cont.forEach(data=>{
-data.addEventListener('mouseup',()=>{
-    isDown=false;
-    data.style.cursor='initial';
-});
-data.addEventListener('mousedown',(e)=>{
-    startX=e.pageX-data.offsetLeft;
-    isDown=true;
-    scrollLeft=data.scrollLeft;
-    data.style.cursor='initial';
-})
-data.addEventListener('mouseleave',()=>{
-    isDown=false;
-    data.style.cursor='initial';
-})
-data.addEventListener('mousemove',(e)=>{
-    if(!isDown) return;
-    e.preventDefault();
-    const x=e.pageX-data.offsetLeft;
-    const walk=(x-startX)*1;
-    data.scrollLeft=scrollLeft-walk;
-    data.style.cursor='grabbing';
-})
-data.addEventListener('touchstart',(e)=>{
-    startX=e.touches[0].pageX-data.offsetLeft;
-    isDown=true;
-    scrollLeft=data.scrollLeft;
-});
-data.addEventListener('touchend',()=>{
-    isDown=false;
-})
-data.addEventListener('touchleave',()=>{
-    isDown=false;
-})
-data.addEventListener('touchmove',(e)=>{
-    if(!isDown) return;
-    const x=e.touches[0].pageX-data.offsetLeft;
-    const walk=(Math.ceil(x)-startX);
-    data.scrollLeft=scrollLeft-walk;
-})
-data.oncontextmenu = function (event) {
-    event.preventDefault()
-    event.stopPropagation()
-    return false
-}
-});
-const arrow_cont=document.querySelectorAll('.arrow-btn');
-arrow_cont.forEach((arrow,index)=>{
-    const data=arrow.querySelectorAll('svg');
-    data.forEach((d,i)=>{
-        d.addEventListener('click',
-        (e)=>{
-            const j=slider_cont[index];
-            (i===1)?(j.scrollLeft=j.scrollLeft-(j.scrollLeft%332)+332):(j.scrollLeft%332?j.scrollLeft=j.scrollLeft-(j.scrollLeft%332):j.scrollLeft=j.scrollLeft-(j.scrollLeft%332)-332);
-        })
-    })
-})
+// let isDown=false;
+// let slider_cont=Array.from(document.querySelectorAll('.mov-wrap'));
+// let startX;
+// let scrollLeft;
+// slider_cont.forEach(data=>{
+// data.addEventListener('mouseup',()=>{
+//     isDown=false;
+//     data.style.cursor='initial';
+// });
+// data.addEventListener('mousedown',(e)=>{
+//     startX=e.pageX-data.offsetLeft;
+//     isDown=true;
+//     scrollLeft=data.scrollLeft;
+//     data.style.cursor='initial';
+// })
+// data.addEventListener('mouseleave',()=>{
+//     isDown=false;
+//     data.style.cursor='initial';
+// })
+// data.addEventListener('mousemove',(e)=>{
+//     if(!isDown) return;
+//     e.preventDefault();
+//     const x=e.pageX-data.offsetLeft;
+//     const walk=(x-startX)*1;
+//     data.scrollLeft=scrollLeft-walk;
+//     data.style.cursor='grabbing';
+// })
+// data.addEventListener('touchstart',(e)=>{
+//     startX=e.touches[0].pageX-data.offsetLeft;
+//     isDown=true;
+//     scrollLeft=data.scrollLeft;
+// });
+// data.addEventListener('touchend',()=>{
+//     isDown=false;
+// })
+// data.addEventListener('touchleave',()=>{
+//     isDown=false;
+// })
+// data.addEventListener('touchmove',(e)=>{
+//     if(!isDown) return;
+//     const x=e.touches[0].pageX-data.offsetLeft;
+//     const walk=(Math.ceil(x)-startX);
+//     data.scrollLeft=scrollLeft-walk;
+// })
+// data.oncontextmenu = function (event) {
+//     event.preventDefault()
+//     event.stopPropagation()
+//     return false
+// }
+// });
+// const arrow_cont=document.querySelectorAll('.arrow-btn');
+// arrow_cont.forEach((arrow,index)=>{
+//     const data=arrow.querySelectorAll('svg');
+//     data.forEach((d,i)=>{
+//         d.addEventListener('click',
+//         (e)=>{
+//             const j=slider_cont[index];
+//             (i===1)?(j.scrollLeft=j.scrollLeft-(j.scrollLeft%332)+332):(j.scrollLeft%332?j.scrollLeft=j.scrollLeft-(j.scrollLeft%332):j.scrollLeft=j.scrollLeft-(j.scrollLeft%332)-332);
+//         })
+//     })
+// })
