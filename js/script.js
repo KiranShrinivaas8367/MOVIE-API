@@ -77,6 +77,7 @@ function getcolor(rate){
 
 const card_det = Array.from(document.querySelectorAll('.mov-wrap'))
 const mov_title = document.querySelector('.container-heading')
+let poster_path;
 
 async function movie_card_fetch(id,i,text){
     card_det[i].innerHTML=''
@@ -87,6 +88,7 @@ async function movie_card_fetch(id,i,text){
     // console.log(datas)
     let mov_card=''
     datas.forEach(e=>{
+      e.poster_path = e.poster_path==null ? `./assets/cinema2.jpg` : `${e.poster_path}`;
         console.log('hello', mov_card)
         mov_card +=`
         <div class="movies-card">
