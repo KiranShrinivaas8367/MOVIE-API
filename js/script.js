@@ -85,11 +85,11 @@ async function movie_card_fetch(id,i,text){
     const resp = await fetch(url)
     const responsed = await resp.json()
     const datas = responsed.results
-    // console.log(datas)
+    console.log(datas)
     let mov_card=''
     datas.forEach(e=>{
       e.poster_path = e.poster_path==null ? `./assets/cinema2.jpg` : `${e.poster_path}`;
-        console.log('hello', mov_card)
+        console.log(e.id)
         mov_card +=`
         <div class="movies-card">
         <img
@@ -111,13 +111,13 @@ async function movie_card_fetch(id,i,text){
      `;
     });
     card_det[i].innerHTML = mov_card;
-    await updater_1( document.querySelectorAll('.hidden-movie-det button'));
+    await mov_link( document.querySelectorAll('.hidden-movie-det button'));
 }
 
-function updater_1(button_redirect){
-    button_redirect.forEach(d=>{
+function mov_link(link_redirect){
+    link_redirect.forEach(d=>{
       d.addEventListener('click',(e)=>{
-        window.location=`./movie.html?id=${d.dataset.id}`;
+        window.location=`./movie.html?id=${835017}`;
       })
     });
     }
