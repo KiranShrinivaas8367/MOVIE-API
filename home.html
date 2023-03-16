@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <!-- <link rel="stylesheet" href="/swiper-bundle.min.css" /> -->
+
     <title>V Data</title>
 </head>
 <body>
@@ -12,14 +14,25 @@
         <nav>
             <p>This Project is done for learning purpose.</p>
         </nav>
-        <div class="search-wrap">
+    
+    </header>
+    
+        <h1>Welcome to movie database</h1>
+
+        <!-- <div class="movie-poster">
+            <img src="/assets/movie1.jpg" class="random-img" data-value="1" alt="img1">
+            <img src="/assets/movie1.jpg" class="random-img" data-value="2" alt="img2">
+            <img src="/assets/movie1.jpg" class="random-img" data-value="3" alt="img3">
+        </div> -->
+
+        <form class="search-wrap" id="form">
             <div class="search-main">
                 <div class="search-input search-input-active">
-                    <input type="text" 
-                    class="search-cont search-cont-active"
+                    <input type="search" 
+                    class="search-cont search-cont-active" id="search"
                     placeholder="Enter Movie Name"/>
-                    <!-- <img src="/assets/search2.svg" alt="" class="search-btn"/> -->
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></a>
+                    
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
                 </div>
                 <img src="" alt="" class="close-btn"/>
             </div>
@@ -28,72 +41,25 @@
 
                 </ul>
             </div>
-        </div>
-        
-    </header>
-
-    <h1>Welcome to movie database</h1>
-    <div class="movie-poster">
-        <img src="/assets/movie1.jpg" class="random-img" data-value="1" alt="img1">
-        <img src="/assets/movie1.jpg" class="random-img" data-value="2" alt="img2">
-        <img src="/assets/movie1.jpg" class="random-img" data-value="3" alt="img3">
-    </div>
+        </form>
     
 
-    <main>
-        <h2 class="container-heading">Kollywood Flicks</h2>
-        <div class="movies-cont-wrap">
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
 
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
+    <div class="movies-cont fav" >
+        <h1></h1>
 
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
+        <!-- <h3>Search your Favourite Movies....</h3> -->
 
-            <div class="movies-card">
+        <div class="searching">
+            <!-- <div class="movies-card">
                 <img
                 src="/assets/movie1.jpg"
                 alt="movie-img"
                 />
-             <h3 class="movie-title">Avatar</h3>
+    
+                <h3 class="movie-title">Avatar</h3>
+             <div><span class='green'>Rating: 8</span></div>
+             
              <div class="hidden-movie-det">
                 <div><span class='hl'>Movie Name:</span>Avatar</div>
                 <div><span class='hl'>Rating:</span> 8</div>
@@ -101,371 +67,188 @@
                 <div><span class="hl">Languages:</span> English</div>
                 <button>See More</button>
              </div>
-            </div>
+            </div> -->
 
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
         </div>
-
-        <div class="arrow-btn">
-            <!-- <img src="" alt="next-btn"> -->
-            <!-- <img src="" alt="previous-btn"> -->
+        <!-- <div class="arrow-btn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-        </div>
+        </div> -->
+        
+    </div>
 
-        <h2 class="container-heading">Thriller Flicks</h2>
-        <div class="movies-cont-wrap">
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
 
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
-
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
-
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
-
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
-        </div>
-
-        <div class="arrow-btn">
-            <!-- <img src="" alt="next-btn">
-            <img src="" alt="previous-btn"> -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-        </div>
-
-        <h2 class="container-heading">Action Flicks</h2>
-        <div class="movies-cont-wrap">
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
-
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
-
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
-
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
-
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
-        </div>
-
-        <div class="arrow-btn">
-            <!-- <img src="" alt="next-btn">
-            <img src="" alt="previous-btn"> -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-        </div>
+    <main class="main"> 
 
         <h2 class="container-heading">Hollywood Flicks</h2>
-        <div class="movies-cont-wrap">
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
 
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
-
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
-
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
-
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
+        <div class="mov-wrap">
+            <div class="movies-cont-wrap-hol">
+                
+                <div class="movies-card">
+                    <!-- <div class="card-content"></div> -->
+                        <img
+                        src="/assets/movie1.jpg"
+                        alt="movie-img"
+                    />
+                     <h3 class="movie-title">Avatar</h3>
+                     <div class="hidden-movie-det">
+                        <div><span class='hl'>Movie Name:</span>Avatar</div>
+                        <div><span class='hl'>Rating:</span> 8</div>
+                        <div><span class="hl">Release Date:</span>10/12/2009</div>
+                        <div><span class="hl">Languages:</span> English</div>
+                        <button>See More</button>
+                     </div>
+                </div>
             </div>
         </div>
 
         <div class="arrow-btn">
-            <!-- <img src="" alt="next-btn">
-            <img src="" alt="previous-btn"> -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
         </div>
 
-        <h2 class="container-heading">Disney-Studio Flicks</h2>
-        <div class="movies-cont-wrap">
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
+            
+        <h2 class="container-heading">Thriller Flicks</h2>
 
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
+        <div class="mov-wrap">
 
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
-            </div>
+            <div class="movies-cont-wrap-tre">
+                <div class="movies-card">
+                    <img
+                    src="/assets/movie1.jpg"
+                    alt="movie-img"
+                    />
 
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
+                    <h3 class="movie-title">Avatar</h3>
+                 <div><span class='green'></span> 8</div>
+                 
+                 <div class="hidden-movie-det">
+                    <div><span class='hl'>Movie Name:</span>Avatar</div>
+                    <div><span class='hl'>Rating:</span> 8</div>
+                    <div><span class="hl">Release Date:</span>10/12/2009</div>
+                    <div><span class="hl">Languages:</span> English</div>
+                    <button>See More</button>
+                 </div>
+                </div>
             </div>
+        </div>
+        
+        <div class="arrow-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+        </div> 
+            
 
-            <div class="movies-card">
-                <img
-                src="/assets/movie1.jpg"
-                alt="movie-img"
-                />
-             <h3 class="movie-title">Avatar</h3>
-             <div class="hidden-movie-det">
-                <div><span class='hl'>Movie Name:</span>Avatar</div>
-                <div><span class='hl'>Rating:</span> 8</div>
-                <div><span class="hl">Release Date:</span>10/12/2009</div>
-                <div><span class="hl">Languages:</span> English</div>
-                <button>See More</button>
-             </div>
+        <h2 class="container-heading">Kollywood Flicks</h2>
+
+        <div class="mov-wrap">
+            <div class="movies-cont-wrap-tam">
+                <div class="movies-card">
+                    <img
+                    src="/assets/movie1.jpg"
+                    alt="movie-img"
+                    />
+                 <h3 class="movie-title">Avatar</h3>
+                 <div class="hidden-movie-det">
+                    <div><span class='hl'>Movie Name:</span>Avatar</div>
+                    <div><span class='hl'>Rating:</span> 8</div>
+                    <div><span class="hl">Release Date:</span>10/12/2009</div>
+                    <div><span class="hl">Languages:</span> English</div>
+                    <button>See More</button>
+                 </div>
+                </div>
             </div>
         </div>
 
         <div class="arrow-btn">
-            <!-- <img src="" alt="next-btn">
-            <img src="" alt="previous-btn"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+         </div>
+
+            
+        <h2 class="container-heading">War Flicks </h2>
+
+        <div class="mov-wrap">
+
+            <div class="movies-cont-wrap-war">
+                <div class="movies-card">
+                    <img
+                    src="/assets/movie1.jpg"
+                    alt="movie-img"
+                    />
+                 <h3 class="movie-title">Avatar</h3>
+                 <div class="hidden-movie-det">
+                    <div><span class='hl'>Movie Name:</span>Avatar</div>
+                    <div><span class='hl'>Rating:</span> 8</div>
+                    <div><span class="hl">Release Date:</span>10/12/2009</div>
+                    <div><span class="hl">Languages:</span> English</div>
+                    <button>See More</button>
+                 </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrow-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+        </div>
+            
+
+        <h2 class="container-heading">Fantasy Flicks</h2>
+
+        <div class="mov-wrap">
+            <div class="movies-cont-wrap-fan">
+
+                <div class="movies-card">
+                    <img
+                    src="/assets/movie1.jpg"
+                    alt="movie-img"
+                    />
+                 <h3 class="movie-title">Avatar</h3>
+                 <div class="hidden-movie-det">
+                    <div><span class='hl'>Movie Name:</span>Avatar</div>
+                    <div><span class='hl'>Rating:</span> 8</div>
+                    <div><span class="hl">Release Date:</span>10/12/2009</div>
+                    <div><span class="hl">Languages:</span> English</div>
+                    <button>See More</button>
+                 </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="arrow-btn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
         </div>
 
+
+        <h2 class="container-heading">Marvel-Studio Flicks</h2>
+
+        <div class="mov-wrap">
+            <div class="movies-cont-wrap-mar">
+                <div class="movies-card">
+                    <img
+                    src="/assets/movie1.jpg"
+                    alt="movie-img"
+                    />
+                 <h3 class="movie-title">Avatar</h3>
+                 <div class="hidden-movie-det">
+                    <div><span class='hl'>Movie Name:</span>Avatar</div>
+                    <div><span class='hl'>Rating:</span> 8</div>
+                    <div><span class="hl">Release Date:</span>10/12/2009</div>
+                    <div><span class="hl">Languages:</span> English</div>
+                    <button>See More</button>
+                 </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="arrow-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+        </div>
+        
         <footer>
             <div class="tmbd-icon">
                 <label for="">Thanks To</label>
@@ -495,4 +278,16 @@
 
     </main>
 </body>
+
+<script src="js/script.js"></script>
+<script src="js/search.js"></script>
+<!-- <script src="js/arrow.js"></script> -->
+<!-- <script src="/trending.js"></script>
+<script src="/search2.js"></script>
+<script src="/kollywood.js"></script>
+<script src="/fantasy.js"></script>
+<script src="/hollywood.js"></script>
+<script src="/war.js"></script>
+<script src="/marvel.js"></script> -->
+<script src="js/movie.js"></script>
 </html>
