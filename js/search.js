@@ -11,6 +11,7 @@ const search = document.getElementById('search')
 const searching = document.querySelector('.searching')
 const mov_card_title = document.querySelector('.fav h1')
 const mov_home_btn = document.querySelector('.button')
+const mov_home_btn2 = document.querySelector('.button1')
 // const arrow = document.querySelector('.movies-cont .arrow-btn')
 
 form.addEventListener('submit',(e)=>{
@@ -36,6 +37,7 @@ async function showSearch(datas){
 
     mov_card_title.innerHTML = `Search Results..`
     mov_home_btn.innerHTML = `<button onClick="window.location.href=window.location.href">Back To Home</button>`
+    mov_home_btn2.innerHTML = `<button onClick="window.location.href=window.location.href">Back To Home</button>`
     let mov_card=''
 
     datas.forEach(e=>{
@@ -45,9 +47,9 @@ async function showSearch(datas){
         
 
         <h3 class="movie-title">${e.title}</h3>
-     <div><span class='${getcolor(e.vote_average)}'>Rating: ${e.vote_average}</span></div>
+     <div><span class='${getcolor(e.vote_average)}'>Rating: ${e.vote_average.toFixed(1)}</span></div>
      
-     <div class="hidden-movie-det">
+     <div class="hidden-movie-det" data-id=${e.id}>
         <div><span class='hl'>Movie Name:</span>${e.title}</div>
         <div><span class='hl'>Rating:</span><span class="${getcolor(e.vote_average)}">${e.vote_average.toFixed(1)}</span></div>
         <div><span class="hl">Release Date:</span>${e.release_date}</div>
@@ -69,6 +71,7 @@ async function showSearch(datas){
     main.classList.add('main-sea')
 
     await updater_1( document.querySelectorAll('.hidden-movie-det button'));
+    await updater_2(document.querySelectorAll('.hidden-movie-det'));
 
     function updater_1(button_redirect){
         button_redirect.forEach(d=>{
@@ -78,6 +81,13 @@ async function showSearch(datas){
         });
         }
     
+    function updater_2(button_redirect){
+            button_redirect.forEach(d=>{
+              d.addEventListener('click',(e)=>{
+                window.location=`./movie.html?id=${e.currentTarget.dataset.id}`;
+              })
+            });
+            }
 
 //     arrow.innerHTML=`<div class="arrow-btn">
 //     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
