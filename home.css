@@ -16,13 +16,14 @@ body{
 }
 
 .movies-cont-wrap-tre,.movies-cont-wrap-war,.searching,.movies-cont-wrap-tam,.movies-cont-wrap-fan,.movies-cont-wrap-mar,.movies-cont-wrap-hol{
-    display: flex;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 header{
-    /* position: sticky; */
+    position: sticky;
     top:0;
-    z-index: 1000;
+    z-index: 100;
 }
 
 /*-----nav----------*/
@@ -30,13 +31,22 @@ header{
 nav{
     width:100%;
     background-color: #2F455C;
-    height:15vh;
+    height:11vh;
     /* position: sticky; */
     top:0; 
     display: flex;
-    justify-content: flex-end;
-    padding:20px;   
+    justify-content: space-between;
+    padding:10px;   
     font-size: 1.5rem;
+}
+
+nav svg{
+    fill:#8ac9df;
+    margin-left: 1.5rem;
+    text-align: center;
+    width:90px;
+    height: 80px;
+    
 }
 
 nav p{
@@ -178,10 +188,9 @@ h2{
     display: flex;
     flex-direction: column;
     margin:1rem;
-    width:350px;
     min-width: 350px;
     height:650px;
-    background-color: #2F455C;
+    background-color: #2F455C; 
     border-radius: 2rem;
     overflow: hidden;
     cursor: pointer;
@@ -277,7 +286,6 @@ h2{
     text-decoration: none;
 }
 
-
 /*-------svg-----*/
 
 svg{
@@ -363,6 +371,50 @@ footer > *{
 .git-repo label{
     margin-bottom: 1rem;
 }
+  /*-----search page-----*/
+
+  .main-sea{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width:100%;
+  }
+
+  .button{
+      width:9vw;
+      margin: auto;
+      padding:.4rem;
+  }
+
+  .button button{
+      padding:1rem;
+      background-color: #2F455C;
+      border:none;
+      border-radius: 25px;
+      color:white;
+      font-weight: bold;
+      font-family: 'Quicksand', sans-serif;
+      font-size:1rem;
+      cursor:pointer;
+    }
+
+    .button1{
+        width:9vw;
+        margin: auto;
+        padding:.4rem;
+    }
+  
+    .button1 button{
+        padding:1rem;
+        background-color: #2F455C;
+        border:none;
+        border-radius: 25px;
+        color:white;
+        font-weight: bold;
+        font-family: 'Quicksand', sans-serif;
+        font-size:1rem;
+        cursor:pointer;
+      }
 
 /*-------scrollbar-------*/
 
@@ -388,9 +440,33 @@ footer > *{
     background: #19818f;
   }
 
-  .main-sea{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width:100%;
-  }
+/*------Media Query-------*/
+@media (max-width:950px){
+    .search-input #input{
+        width:100px;
+        margin:auto;
+    }
+}
+
+@media(max-width:900px){
+    h1{
+        font-size:3rem;
+        display: inline;
+        
+    }
+}
+
+@media (max-width:1320px){
+    h2{
+        width:400px;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width:390px){
+    .mov-wrap{
+        width:100%;
+        display: flex;
+        
+    }
+}
