@@ -37,7 +37,7 @@ async function showSearch(datas){
 
     mov_card_title.innerHTML = `Search Results..`
     mov_home_btn.innerHTML = `<button onClick="window.location.href=window.location.href">Back To Home</button>`
-    mov_home_btn2.innerHTML = `<button onClick="window.location.href=window.location.href">Back To Home</button>`
+    // mov_home_btn2.innerHTML = `<button onClick="window.location.href=window.location.href">Back To Home</button>`
     let mov_card=''
 
     datas.forEach(e=>{
@@ -54,7 +54,7 @@ async function showSearch(datas){
         <div><span class='hl'>Rating:</span><span class="${getcolor(e.vote_average)}">${e.vote_average.toFixed(1)}</span></div>
         <div><span class="hl">Release Date:</span>${e.release_date}</div>
         <div><span class="hl">Languages:</span> ${e.original_language}</div>
-        <button data-id=${e.id}>See More</button>
+        <button data-id=${e.id}>View</button>
      </div>
      </div>`;
 
