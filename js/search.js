@@ -12,6 +12,7 @@ const searching = document.querySelector('.searching')
 const mov_card_title = document.querySelector('.fav h1')
 const mov_home_btn = document.querySelector('.button')
 const mov_home_btn2 = document.querySelector('.button1')
+
 // const arrow = document.querySelector('.movies-cont .arrow-btn')
 
 form.addEventListener('submit',(e)=>{
@@ -28,8 +29,10 @@ form.addEventListener('submit',(e)=>{
 })
 
 async function getSearch(url){
+    // searchresult.innerHTML = '';
     const resp = await fetch(url)
     const responsed = await resp.json()
+    // console.log(responsed.results)
     showSearch(responsed.results);
 }
 
@@ -49,7 +52,7 @@ async function showSearch(datas){
         <h3 class="movie-title">${e.title}</h3>
      <div><span class='${getcolor(e.vote_average)}'>Rating: ${e.vote_average.toFixed(1)}</span></div>
      
-     <div class="hidden-movie-det" data-id=${e.id}>
+     <div class="movie-details" data-id=${e.id}>
         <div><span class='hl'>Movie Name:</span>${e.title}</div>
         <div><span class='hl'>Rating:</span><span class="${getcolor(e.vote_average)}">${e.vote_average.toFixed(1)}</span></div>
         <div><span class="hl">Release Date:</span>${e.release_date}</div>
@@ -70,8 +73,8 @@ async function showSearch(datas){
     main.innerHTML=mov_card;
     main.classList.add('main-sea')
 
-    await updater_1( document.querySelectorAll('.hidden-movie-det button'));
-    await updater_2(document.querySelectorAll('.hidden-movie-det'));
+    await updater_1( document.querySelectorAll('.movie-details button'));
+    await updater_2(document.querySelectorAll('.movie-details'));
 
     function updater_1(button_redirect){
         button_redirect.forEach(d=>{
