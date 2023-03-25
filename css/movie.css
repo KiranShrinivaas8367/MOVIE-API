@@ -22,7 +22,7 @@ img{
 
 svg{
     width:60px;
-    height: 40px;
+    height: 50px;
     fill:#2a94b8;
     /* fill:#285A6B; */
     /* background: white; */
@@ -534,18 +534,18 @@ nav{
 }
 
 .rec-card{
-display: flex;
-flex-direction: column;
-flex-shrink:0;
-margin:1rem;
-width:min(95%,350px);
-/* min-width: 350px; */
-height:650px;
-background-color: #2F455C;
-border-radius: 2rem;
-overflow: hidden;
-cursor: pointer;
-position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink:0;
+    margin:1rem;
+    width:min(95%,350px);
+    /* min-width: 350px; */
+    height:650px;
+    background-color: #2F455C;
+    border-radius: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
 }
 
 .rec-card img{
@@ -639,7 +639,7 @@ position: relative;
 footer{
     background-color: #2F455C;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap:wrap;
     width: 100%;
@@ -650,7 +650,8 @@ footer{
 
 footer > *{
     margin:.1rem .1rem;    
-    font-size: 1.7rem;
+    font-size: clamp(1rem,2vw,1.5rem);
+    /* font-weight: bold; */
     width: 20rem;
     text-align: center;
 }
@@ -663,8 +664,9 @@ footer > *{
 }
 
 .tmbd-icon img{
-    height:100px;
-    width:150px;
+    /* height:100px; */
+    width:clamp(100px,10vw,150px);
+    padding:.5rem;
 }
 
 .git_and_linkedin{
@@ -784,12 +786,6 @@ span.red{
     }
 }
 
-@media(max-width:680px){
-    footer > *{
-        font-size:1.5rem;
-    }
-}
-
 @media(max-width:500px){
     iframe{
         width:300px;
@@ -808,6 +804,13 @@ span.red{
 @media(max-width:405px){
     .rec-mov h1{
         width:unset;
+    }
+}
+
+@media(max-width:680px){
+    footer{
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -830,8 +833,11 @@ span.red{
     }
 
     header nav .prod-name{
-        width: clamp(40%,2vw,90%);
-        /* white-space: nowrap; */
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        /* white-space: pre-wrap; */
     }
 
     .prod-name > *{
@@ -843,8 +849,8 @@ span.red{
     }
 
     header nav .prod-plat img{
-        width:clamp(55px,3vw,70px);
-        height:clamp(55px,2vh,90px);
+        width:clamp(46px,2vw,70px);
+        height:clamp(48px,2vh,90px);
         margin:.5rem;
         padding:.5rem;
     }

@@ -352,7 +352,7 @@ footer{
 
 footer > *{
     margin:.1rem .1rem;    
-    font-size: 1.7rem;
+    font-size: clamp(1rem,2vw,1.8rem);
     width: 20rem;
     text-align: center;
 }
@@ -365,8 +365,9 @@ footer > *{
 }
 
 .tmbd-icon img{
-    height:100px;
-    width:150px;
+    /* height:100px; */
+    width:clamp(140px,2vw,150px);
+    padding:.5rem;
 }
 
 .git_and_linkedin{
