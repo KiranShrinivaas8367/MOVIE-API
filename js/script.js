@@ -12,71 +12,9 @@ function getcolor(rate){
     return 'red'
 }
 
-// const arrow = document.querySelector('.mov-wrap .arrow-btn')
-
-/*-----Search-----*/
-// const form = document.getElementById('form')
-// const search_url= base_url + '/search/movie?' + api_key;
-// const search = document.getElementById('search')
-// const searching = document.querySelector('.searching')
-// const mov_card_title = document.querySelector('.fav h1')
-// const arrow = document.querySelector('.movies-cont .arrow-btn')
-
-// form.addEventListener('submit',(e)=>{
-//     e.preventDefault();
-//     const searchArea = search.value;
-//     console.log(searchArea)
-//     if(searchArea){
-//         getSearch(search_url+'&query='+searchArea)
-//         // console.log(search_url+'&query='+searchArea)
-//     }
-//     else{
-//         getTrending(trend_url);
-//     }
-// })
-
-// getSearch(search_url)
-// function getSearch(url){
-//     fetch(url).then(res=>res.json()).then(data=>{
-//         console.log(data.results);
-//         showSearch(data.results);
-//     })
-// }
-
-// function showSearch(datas){
-
-//     searching.innerHTML = ''
-//     mov_card_title.innerHTML = `Search Results..`
-//     datas.forEach(data=>{
-//         const {poster_path,title,vote_average,release_date,original_language} = data
-//         const search_movie = document.createElement('div')
-//         search_movie.classList.add("movies-card");
-
-//         search_movie.innerHTML = `
-        
-//                     <img
-//                     src="${img_url+poster_path}"
-//                     alt="${title}"
-//                     />
-//                  <h3 class="movie-title">${title}</h3>
-//                  <div><span class='${getcolor(vote_average)}'>Rating: ${vote_average}</span></div>
-                 
-//                  <div class="hidden-movie-det">
-//                     <div><span class='hl'>Movie Name:</span>${title}</div>
-//                     <div><span class='hl'>Rating:</span> ${vote_average}</div>
-//                     <div><span class="hl">Release Date:</span>${release_date}</div>
-//                     <div><span class="hl">Languages:</span> ${original_language}</div>
-//                     <button>See More</button>
-//                  </div>
-//                 `
-//                 searching.appendChild(search_movie)
-//     })
-
-// }
-
-
 const card_det = Array.from(document.querySelectorAll('.mov-wrap'))
 const mov_title = document.querySelector('.container-heading')
+const sea_res = document.querySelector('.sea-res')
 let poster_path;
 
 async function movie_card_fetch(id,i,text){
@@ -100,19 +38,19 @@ async function movie_card_fetch(id,i,text){
         <h3 class="movie-title">${e.title}</h3>
      <div><span class='${getcolor(e.vote_average)}'>Rating: ${e.vote_average}</span></div>
      
-     <div class="hidden-movie-det" data-id=${e.id}>
-        <div><span class='hl'>Movie Name:</span>${e.title}</div>
-        <div><span class='hl'>Rating:</span><span class="${getcolor(e.vote_average)}"> ${e.vote_average.toFixed(1)}</span></div>
-        <div><span class="hl">Release Date:</span>${e.release_date}</div>
-        <div><span class="hl">Languages:</span> ${e.original_language}</div>
+     <div class="movie-details" data-id=${e.id}>
+        <div><span>Movie Name:</span>${e.title}</div>
+        <div><span>Rating:</span><span class="${getcolor(e.vote_average)}"> ${e.vote_average.toFixed(1)}</span></div>
+        <div><span>Release Date:</span>${e.release_date}</div>
+        <div><span>Languages:</span> ${e.original_language}</div>
         <button data-id=${e.id}>View</button>
      </div>
      </div>
      `;
     });
     card_det[i].innerHTML = mov_card;
-    await mov_link( document.querySelectorAll('.hidden-movie-det button'));
-    await mov_link2(document.querySelectorAll('.hidden-movie-det'));
+    await mov_link( document.querySelectorAll('.movie-details button'));
+    await mov_link2(document.querySelectorAll('.movie-details'));
 }
 
 function mov_link(redirect){
@@ -131,12 +69,22 @@ function mov_link2(redirect){
     });
 }
 
+// function retSearchResut(url){
+//     const resp = await fetch(url)
+//     const responsed = await resp.json()
+//     const recommendations = responsed.results;
+//     recommendations.forEach(data=>{
+//       sea_res.innerHTML += `<li class="search-item" data-id=${data.id}>${data.title} - ${data.original_title}</li>`
+//     })
+// }
+
 movie_card_fetch('en',0,'original_lanugage')
 movie_card_fetch(53,1,'genres')
 movie_card_fetch('ta',2,'original_language')
 movie_card_fetch(10752,3,'genres')
 movie_card_fetch(14,4,'genres')
 movie_card_fetch(420,5,'companies')
+// async function retSearchResut(search_url)
 
 let isDown=false;
 let slider_cont=Array.from(document.querySelectorAll('.mov-wrap'));
