@@ -9,13 +9,21 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="header">
+            <div class="prod-name">
+                
+            </div>
+
+            <div class="prod-plat">
+            
+            </div>
         </nav>
     </header>
 
     <section class="nav-header">
         <div class="header-1">
             <h1 class="movie-title"></h1>
+            <span></span>
         </div>
         <div class="header-2">
             <div class="movie-rate">
@@ -39,7 +47,7 @@
                 <div class="pos_con">
                     <div class="pos_img_det">
                         <div class="pos_image">
-                            <img src="/assets/movie1.jpg" alt="movie-img">
+                            <img src="/assets/cinema2.jpg" alt="movie-img">
                             <p class="movie_line"></p>
                         </div>
                         <div class="pos_movie_det">
@@ -59,9 +67,9 @@
                                 <h2>Budget:</h2>
                                 <span class="mov_value"></span>
                             </div>
-                            <div class="movie-title">
+                            <div class="movie-title_gen">
                                 <h2>Genre:</h2>
-                                <span class="mov_value"></span>
+                                <span class="mov_value_gen"></span>
                             </div>
                         </div>
                     </div>
@@ -69,53 +77,175 @@
             </div>
         </div>
 
-        <div class="movie_genre">
+        <div class="movie_plot">
             <h2>Description</h2>
             <p></p>
         </div>
 
         <div class="movie-cast">
-            <div class="cast-slide">
-                <h1>Cast</h1>
-                <div class="slider__cnt" data-value="cast">
+            <h1>Cast</h1>
+            <div class="cast-slide arr-slide">
+                <!-- <div class="slider__cnt" data-value="cast">
                     <div class="start-drag" data-value="cast"></div>
                     <div class="end-drag" data-value="cast"></div>
-                </div>
 
-                <div class="arrow-btn">
-                    <!-- <img src="" alt="next-btn">
-                    <img src="" alt="previous-btn"> -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-                </div>
+                    <div class="cast-card card">
+                        <img src="/assets/cinema.jpg" alt="">
+                        <div class="card-details">
+                            <h2 class="cast-name">Vijay</h2>
+                        </div>
+                        <div class="char-name">Vijay </div>
+                    </div>
+
+                    <div class="cast-card card">
+                        <img src="/assets/cinema.jpg" alt="">
+                        <div class="card-details">
+                            <h2 class="cast-name">Vijay</h2>
+                        </div>
+                        <div class="char-name">Vijay </div>
+                    </div>
+
+                    <div class="cast-card card">
+                        <img src="/assets/cinema.jpg" alt="">
+                        <div class="card-details">
+                            <h2 class="cast-name">Vijay</h2>
+                        </div>
+                        <div class="char-name">Vijay </div>
+                    </div>
+
+                    <div class="cast-card card">
+                        <img src="/assets/cinema.jpg" alt="">
+                        <div class="card-details">
+                            <h2 class="cast-name">Vijay</h2>
+                        </div>
+                        <div class="char-name">Vijay </div>
+                    </div>
+
+                    <div class="cast-card card">
+                        <img src="/assets/cinema.jpg" alt="">
+                        <div class="card-details">
+                            <h2 class="cast-name">Vijay</h2>
+                        </div>
+                        <div class="char-name">Vijay </div>
+                    </div>
+                </div> -->
             </div>
         </div>
 
+        <div class="arrow-btn">
+            <!-- <img src="" alt="next-btn">
+            <img src="" alt="previous-btn"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+        </div>
+
         <div class="media">
-            <div class="media_display"></div>
+            <!-- <div class="media_display"></div>
             <div class="med_cont">
                 <h3 class="media__poster photo__bg photo">Photos<span class="value"></span></h3>
                 <h3 class="media__poster video__bg video">Videos<span class="value"></span></h3>
                 <h3 class="media__poster photo__bg photo">Photos<span class="value"></span></h3>
+            </div> -->
+
+            <h1>Videos</h1>
+            <div class="video">
+                <p class="no-video"></p>    
             </div>
+            
         </div>
 
         <div class="rec-mov">
-            <div class="rec-slide">
-                <h1>Recommended Movies</h1>
-                <div class="rec__cnt" data-value="recommendation">
+            <h1>Similar Movies</h1>
+            <div class="arr-slide rec-slide">
+                <!-- <div class="rec__cnt" data-value="recommendation">
                     <div class="start-drag" data-value="recommendation"></div>
                     <div class="end-drag" data-value="recommendation"></div>
-                </div>
 
-                <div class="arrow-btn">
-                    <!-- <img src="" alt="next-btn">
-                    <img src="" alt="previous-btn"> -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-                </div>
+                    <div class="rec-card" data-id="">
+                        <img src="/assets/cinema.jpg" alt="">
+                        <div class="card-details">
+                            <h2 class="cast-title">Vijay</h2>
+                            <span class='${getcolor(8)}'>Rating: 8</span>
+                        </div>
+                        <div class="hidden-movie-det">
+                            <div><span class='hl'>Movie Name:</span>Avatar</div>
+                            <div><span class='hl'>Rating:</span> 8</div>
+                            <div><span class="hl">Release Date:</span>10/12/2009</div>
+                            <div><span class="hl">Language:</span> English</div>
+                            <button>See More</button>
+                         </div>
+                    </div>
+
+                    <div class="rec-card" data-id="">
+                        <img src="/assets/cinema.jpg" alt="">
+                        <div class="card-details">
+                            <h2 class="cast-title">Vijay</h2>
+                            <span class='${getcolor(8)}'>Rating: 8</span>
+                        </div>
+                        <div class="hidden-movie-det">
+                            <div><span class='hl'>Movie Name:</span>Avatar</div>
+                            <div><span class='hl'>Rating:</span> 8</div>
+                            <div><span class="hl">Release Date:</span>10/12/2009</div>
+                            <div><span class="hl">Language:</span> English</div>
+                            <button>See More</button>
+                         </div>
+                    </div>
+
+                    <div class="rec-card" data-id="">
+                        <img src="/assets/cinema.jpg" alt="">
+                        <div class="card-details">
+                            <h2 class="cast-title">Vijay</h2>
+                            <span class='${getcolor(8)}'>Rating: 8</span>
+                        </div>
+                        <div class="hidden-movie-det">
+                            <div><span class='hl'>Movie Name:</span>Avatar</div>
+                            <div><span class='hl'>Rating:</span> 8</div>
+                            <div><span class="hl">Release Date:</span>10/12/2009</div>
+                            <div><span class="hl">Language:</span> English</div>
+                            <button>See More</button>
+                         </div>
+                    </div>
+
+                    <div class="rec-card" data-id="">
+                        <img src="/assets/cinema.jpg" alt="">
+                        <div class="card-details">
+                            <h2 class="cast-title">Vijay</h2>
+                            <span class='${getcolor(8)}'>Rating: 8</span>
+                        </div>
+                        <div class="hidden-movie-det">
+                            <div><span class='hl'>Movie Name:</span>Avatar</div>
+                            <div><span class='hl'>Rating:</span> 8</div>
+                            <div><span class="hl">Release Date:</span>10/12/2009</div>
+                            <div><span class="hl">Language:</span> English</div>
+                            <button>See More</button>
+                         </div>
+                    </div>
+
+                    <div class="rec-card" data-id="">
+                        <img src="/assets/cinema.jpg" alt="">
+                        <div class="card-details">
+                            <h2 class="cast-title">Vijay</h2>
+                            <span class='${getcolor(8)}'>Rating: 8</span>
+                        </div>
+                        <div class="hidden-movie-det">
+                            <div><span class='hl'>Movie Name:</span>Avatar</div>
+                            <div><span class='hl'>Rating:</span> 8</div>
+                            <div><span class="hl">Release Date:</span>10/12/2009</div>
+                            <div><span class="hl">Language:</span> English</div>
+                            <button>See More</button>
+                         </div>
+                    </div>
+
+                </div> -->
+
             </div>
         </div>
+        <div class="arrow-btn">
+            <!-- <img src="" alt="next-btn">
+            <img src="" alt="previous-btn"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+        </div>  
     </main>
 
     <footer>
@@ -145,4 +275,7 @@
         </div>
     </footer>
 </body>
+
+<script src="./js/movie.js"></script>
+
 </html>
