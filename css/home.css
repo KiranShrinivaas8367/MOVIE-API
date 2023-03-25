@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 
@@ -31,7 +31,7 @@ header{
 header nav{
     width:100%;
     background-color: #2F455C;
-    height:auto;
+    height:10vh;
     /* position: sticky;
     top:0; */
     display: flex;
@@ -52,6 +52,21 @@ nav svg{
 
 nav p{
     /* width:15vw; */
+}
+
+header nav button{
+    /* background-color: rgb(138, 201, 223); */
+    background-color:#19818f;
+    font-size: 1rem;
+    font-weight: bold;
+    border:2px solid black;
+    border-radius: 25px;
+    padding:1.1rem;
+    width:max-content;
+    /* color:rgb(245, 236, 236); */
+    color:#ccc;
+    cursor:pointer;
+    border:none;
 }
 
 /*----search-input----*/
@@ -498,6 +513,11 @@ footer > *{
 
     .title{
         width: unset;
+    }
+
+    header nav button{
+        font-size: .8rem;
+        padding: .8rem;
     }
 }
 
