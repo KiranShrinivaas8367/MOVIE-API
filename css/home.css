@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 
@@ -151,10 +151,25 @@ nav p{
 
 /*-----Title----*/
 
+.title{
+    display: flex;
+    width: max-content;
+    margin: 3rem auto;
+}
+
+.title > *{
+    margin:1rem;
+}
+
+.title img{
+    width:60px;
+    height: 60px;
+    
+}
+
 h1{
     font-size:3.5rem;
     text-align: center;
-    margin: 2rem auto;
     color:#19818f;
     font-weight: bolder;
     letter-spacing: .3rem;
@@ -474,6 +489,10 @@ footer > *{
 @media (max-width:400px){
     .movies-card{
         margin: 0.9rem;
+    }
+
+    .title{
+        width: unset;
     }
 }
 
