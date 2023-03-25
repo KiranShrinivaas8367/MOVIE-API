@@ -650,7 +650,7 @@ footer{
 
 footer > *{
     margin:.1rem .1rem;    
-    font-size: clamp(1rem,2vw,1.5rem);
+    font-size: clamp(1rem,2vw,1.8rem);
     /* font-weight: bold; */
     width: 20rem;
     text-align: center;
@@ -698,6 +698,10 @@ footer > *{
 
 .git-repo label{
     margin-bottom: 1rem;
+}
+
+.thanks label{
+    font-size: clamp(1rem,2vw,1.3rem);
 }
 
 /*-------scrollbar-------*/
