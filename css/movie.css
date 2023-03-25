@@ -236,7 +236,7 @@ nav{
 .pos_backgd{
     width:100%;
     height: 80vh;
-    background:url(assets/cinema2.jpg) top;
+    background:url(../assets/cinema2.jpg) top;
     background-size:cover;
     background-repeat: no-repeat;
 }
