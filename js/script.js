@@ -35,14 +35,14 @@ async function movie_card_fetch(id,i,text){
         alt="${e.title}"
         />
 
-        <h3 class="movie-title">${e.title}</h3>
-     <div><span class='${getcolor(e.vote_average)}'>Rating: ${e.vote_average}</span></div>
+        <h3 class="movie-title">${e.title == 0 ? "N/A" : e.title}</h3>
+     <div><span class='${getcolor(e.vote_average)}'>Rating: ${e.vote_average == 0 ? "N/A" : e.vote_average.toFixed(1)}</span></div>
      
      <div class="movie-details" data-id=${e.id}>
-        <div><span>Movie Name:</span>${e.title}</div>
-        <div><span>Rating:</span><span class="${getcolor(e.vote_average)}"> ${e.vote_average.toFixed(1)}</span></div>
-        <div><span>Release Date:</span>${e.release_date}</div>
-        <div><span>Languages:</span> ${e.original_language}</div>
+        <div><span>Movie Name:</span>${e.title == 0 ? "N/A" : e.title}</div>
+        <div><span>Rating:</span><span class="${getcolor(e.vote_average)}"> ${e.vote_average == 0 ? "N/A" : e.vote_average.toFixed(1)}</span></div>
+        <div><span>Release Date:</span>${e.release_date == 0 ? "N/A" : e.release_date}</div>
+        <div><span>Languages:</span> ${e.original_language == 0 ? "N/A" : e.original_language}</div>
         <button data-id=${e.id}>View</button>
      </div>
      </div>
