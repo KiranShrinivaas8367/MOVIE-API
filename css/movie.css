@@ -96,7 +96,7 @@ header nav .prod-name{
 
 .prod-name img:hover{
     transform:scale(1.2);
-    background-color: white;
+    background-color: #ccc;
 }
 
 header nav .prod-plat img{
