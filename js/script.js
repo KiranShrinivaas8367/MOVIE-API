@@ -26,12 +26,12 @@ async function movie_card_fetch(id,i,text){
     console.log(datas)
     let mov_card=''
     datas.forEach(e=>{
-      e.poster_path = e.poster_path==null ? `./assets/cinema2.jpg` : `${e.poster_path}`;
+      e.poster_path = e.poster_path==null ? `./assets/cinema.jpg` : `${img_url + e.poster_path}`;
         // console.log(e.id)
         mov_card +=`
         <div class="movies-card" data-id=${e.id}>
         <img
-        src="${img_url+e.poster_path}"
+        src="${e.poster_path}"
         alt="${e.title}"
         />
 
